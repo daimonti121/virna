@@ -1,0 +1,270 @@
+// h1 
+//     color: green
+//     font-family: "Cera Pro", Montserrat
+//     margin: 15px
+//     padding: 15px
+//     border: 1px solid black 
+//     width: 30px
+//     writing-mode: vertical-lr
+// .t1 
+//     transform: rotateX(180deg) rotateY(180deg) 
+.header
+    height: 457px
+    padding: 0px
+    margin: 0px
+.header-inner
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: 457px
+    position: relative
+    overflow: hidden
+.header__menu
+    background: rgba(255, 255, 255, 0.85)
+    backdrop-filter: blur(40px)
+    position: relative
+    z-index: 10
+.header__logo
+    width: 120px
+    height: 16px
+    margin: 36px 0 0 22px
+.header__menu h2 
+    position: absolute
+    top: 106px
+    left: 16px
+    font-style: normal
+    font-weight: bold
+    font-size: 42px
+    line-height: 100%
+    letter-spacing: 0.02em
+    color: #000
+.header__menu h4 
+    font-style: normal
+    font-weight: 500
+    font-family: Cera Pro
+    font-size: 13px
+    line-height: 100%
+    letter-spacing: 0.04em
+    color: #000
+    transform: rotate(180deg)
+    writing-mode: vertical-lr
+    margin-top: 170px
+    text-align: right
+    position: relative
+    height: 100px
+    &::before
+        content: "of"
+        font-family: Cera Pro
+        font-style: normal
+        font-weight: 500
+        font-size: 13px
+        line-height: 100%
+        letter-spacing: 0.04em
+        color: #000
+        transform: rotate(0deg)
+        writing-mode: vertical-lr
+        position: absolute
+        top: 28px
+        right: 0px
+.header__background-img
+    position: absolute
+    width: 100%
+    height: 457px
+    left: 0px
+    object-fit: cover
+    z-index: 1
+.header__icons
+    margin-top: 86px
+    margin-left: 20px
+.header__icon
+    margin-left: 8px
+.header__icons--first
+    margin-right: 15px
+.header__icons--last
+    margin-right: 10px
+.header__icons
+    cursor: pointer
+.header__language
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 18px
+    position: absolute
+    top: 411px
+    left: 24px
+    cursor: pointer
+    display: none
+    &::after
+        content: url('../img/arrow-down.png')
+        width: 5px
+        height: 5px
+        margin-left: 2px
+        position: absolute
+        left: 17px
+        top: -2px
+.header__info
+    background: #fff
+    position: relative
+    z-index: 10
+.header__logo-right
+    width: 50px
+    height: auto
+    margin: 33px 16px 0px 9px
+.header__store
+    font-family: Cera Pro
+    font-size: 16px
+    line-height: 18px
+    color: #000
+    transform: rotate(90deg)
+
+    position: absolute
+    top: 140px
+    left: -55px
+    height: 120px
+    &::after
+        content: "2020"
+        font-family: Cera Pro
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 18px
+        color: #000
+        position: absolute
+        left: 144px
+.header__language--mobile
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 18px
+    position: absolute
+    top: 411px
+    left: 24px
+    cursor: pointer
+    &::after
+        content: url('../img/arrow-down.png')
+        width: 5px
+        height: 5px
+        margin-left: 2px
+        position: absolute
+        left: 17px
+        top: -2px
+.main
+    margin-top: 100px
+.main__title
+    position: relative
+.main__title h2 
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 28px
+    color: #000000
+    margin-left: 15px
+.main__title h6
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 15px
+    color: #000000
+    transform: rotate(-90deg)
+
+    position: absolute
+    left: 14px
+    top: 152px
+.main__title h4
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 132.4%
+    color: #292929
+    width: 270px
+    margin-top: 30px
+    margin-left: 46px
+.main__catalog
+    margin-top: 115px
+    display: flex
+    width: 100%
+    height: 185px
+    background: #F6FBFE
+    position: relative
+.main__background-img
+    margin-top: -22px
+    margin-left: 3px
+.main__number
+    display: flex
+.main__number--first
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 30px
+    color: #000000
+
+    margin-right: 21px
+    margin-top: 18px
+    display: block
+
+    position: absolute
+    right: 1px
+    &::before
+        content: "2"
+        right: 21px
+        position: absolute
+    &::after
+        content: ""
+        width: 1px
+        height: 15px
+        background: #000000
+        right: 13px
+        top: 7px
+        position: absolute
+.main__text
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 15px
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #000000
+    transform: rotate(-90deg)
+    position: absolute
+    top: 30px
+.main__ul
+    margin-top: 80px
+    margin-left: 8px
+.main__li
+    list-style-type: none
+    margin-bottom: 8px
+    position: relative
+.main__li::before
+    content: url('../img/icon_completed.png')
+    position: absolute
+    left: -26px
+    top: 3px
+    width: 8px
+    height: 6px
+.main__close
+    font-family: Cera Pro
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 30px
+    color: #000000
+    margin-top: 50px
+    margin-left: 16px
+    position: relative
+.main__close::after
+    content: url('../img/icon_close.png')
+    position: absolute
+    top: -9px
+    left: 64px
+    width: 10px
+    height: 10px
+
+
+    
