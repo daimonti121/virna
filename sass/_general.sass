@@ -30,14 +30,15 @@
     margin: 36px 0 0 22px
 .header__menu h2 
     position: absolute
-    top: 102px
+    top: 66px
     left: 15px
     font-style: normal
     font-weight: bold
     font-size: 42px
     line-height: 100%
-    letter-spacing: 0.02em
     color: #000
+    font-family: 'Cera Pro'
+    letter-spacing: 0.03em
 .header__menu h4 
     font-style: normal
     font-weight: 500
@@ -48,7 +49,7 @@
     color: #000
     transform: rotate(180deg)
     writing-mode: vertical-lr
-    margin-top: 167px
+    margin-top: 162px
     text-align: right
     position: relative
     height: 100px
@@ -64,8 +65,8 @@
         transform: rotate(0deg)
         writing-mode: vertical-lr
         position: absolute
-        top: 19px
-        right: 1px
+        top: 25px
+        right: -1px
 .header__background-img
     position: absolute
     width: 100%
@@ -74,8 +75,8 @@
     object-fit: cover
     z-index: 1
 .header__icons
-    margin-top: 83px
-    margin-left: 7px
+    margin-top: 87px
+    margin-left: 4px
 .header__icon
     margin-left: 11px
 .header__icons--first
@@ -151,7 +152,6 @@
         left: 15px
         top: -2px
 .main
-    max-width: 1920px
     width: 100%
     margin: 0 auto
     margin-top: 78px
@@ -173,22 +173,21 @@
     line-height: 15px
     color: #000000
     transform: rotate(-90deg)
-
     position: absolute
     left: 8px
-    top: 156px
+    top: 127px
 .main__title h4
     font-family: Montserrat
     font-style: normal
     font-weight: normal
     font-size: 14px
-    line-height: 132.4%
+    line-height: 120.4%
     color: #292929
     width: 270px
     margin-top: 30px
     margin-left: 46px
 .main__catalog
-    margin-top: 110px
+    margin-top: 117px
     display: flex
     width: 100%
     height: 185px
@@ -219,12 +218,12 @@
         position: absolute
     &::after
         content: ""
-        right: 18px
-        top: 9px
         background: #000000
-        right: 13px
-        top: 7px
         position: absolute
+        width: 1px
+        height: 15px
+        right: 17px
+        top: 9px
 .main__text
     font-family: Cera Pro
     font-style: normal
@@ -236,7 +235,7 @@
     color: #000000
     transform: rotate(-90deg)
     position: absolute
-    top: 30px
+    top: 18px
 .main__ul
     margin-top: 79px
     margin-left: 3px
@@ -294,7 +293,7 @@
 .catalog__description
     display: flex
     align-items: center
-    margin-left: 15px
+    margin-left: 10px
     margin-top: 30px
     position: relative
 .catalog__text
@@ -304,7 +303,7 @@
     font-size: 13px
     line-height: 30px
     color: #000000
-    margin-right: 56px
+    margin-right: 48px
     position: relative
 .catalog__size
     margin-left: 30px
@@ -379,12 +378,12 @@
     color: #000000
 .catalog__block
     width: 170px
-    margin-top: 76px
+    margin-top: 73px
     margin-left: 126px
 .catalog__buttons 
     display: flex
     width: 100%
-    margin: 30px 59px 0px
+    margin: 25px 58px 0px
 .catalog__button
     width: 10px
     height: 10px    
@@ -399,6 +398,8 @@
         left: -4px
         opacity: 0
     &:hover:before
+        opacity: 1
+    &:focus:before
         opacity: 1
 .catalog__button--blue
     background: #82BDCF
@@ -440,7 +441,9 @@
     left: 286px
     width: 100px
 .colors 
-    width: 330px
+    max-width: 360px
+    width: 100%
+    margin: 0 auto
     margin: 80px 15px
     position: relative
 .colors__title
@@ -451,6 +454,7 @@
     line-height: 28px
     letter-spacing: 0.03em
     color: #000000
+    margin: 80px 0 0 15px
 .colors__text
     font-family: Montserrat
     font-style: normal
@@ -458,7 +462,8 @@
     font-size: 12px
     line-height: 132.4%
     color: #292929
-    margin: 32px 0px 0px 30px
+    width: 270px
+    margin: 32px 0px 0px 46px
 .colors__vervical-text
     font-family: Cera Pro
     font-style: normal
@@ -471,12 +476,12 @@
     transform: rotate(-90deg)
     position: absolute
     top: 178px
-    left: -10px
+    left: 5px
 .colors__gallery
-    margin-top: 136px
+    margin-top: 121px
     position: relative
 .colors__gallery-title
-    margin-left: 30px
+    margin-left: 46px
     width: 270px
     font-family: Cera Pro
     font-style: normal
@@ -502,7 +507,7 @@
     height: 50px
     background: #9A0034
     position: absolute
-    left: 180px
+    left: 195px
     top: 212px
     &::after
         position: absolute
@@ -521,7 +526,7 @@
     position: absolute
     width: 70px
     height: 50px
-    left: 60px
+    left: 75px
     top: 314px
     background: #E8D8D9
     &::after
@@ -538,7 +543,7 @@
     position: absolute
     width: 70px
     height: 50px
-    left: 161px
+    left: 176px
     top: 314px
     background: #D7969E
     &::after
@@ -555,7 +560,7 @@
     position: absolute
     width: 70px
     height: 50px
-    left: 1px
+    left: 15px
     top: 476px
     background: #898989
     &::after
@@ -572,14 +577,14 @@
     position: absolute
     width: 70px
     height: 50px
-    left: 260px
+    left: 275px
     top: 396px
     background: #DEDCDC
 .colors__lite-gray-block
     position: absolute
     width: 70px
     height: 50px
-    left: 100px
+    left: 115px
     top: 559px
     background: #B7B7B7
     &::after
@@ -596,19 +601,22 @@
     position: absolute
     width: 70px
     height: 50px
-    left: 200px
+    left: 215px
     top: 559px
     background: #000
-.colors__gallery-vervical-text
-    font-family: Cera Pro
-    font-style: normal
-    font-weight: 500
-    font-size: 12px
-    line-height: 18px
-    letter-spacing: 0.03em
-    text-transform: uppercase
-    color: #000000
-    transform: rotate(-90deg)
-    position: absolute
-    bottom: -548px
-    right: -16px
+    &::after
+        content: "bright"
+        font-family: Cera Pro
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #000000
+        transform: rotate(-90deg)
+        position: absolute
+        bottom: -19px
+        right: -75px
+
+
